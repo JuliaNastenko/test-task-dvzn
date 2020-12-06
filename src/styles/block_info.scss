@@ -1,0 +1,78 @@
+.sec-info__h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  color: #081d31;
+}
+
+.sec-info p {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #2e3c49;
+  text-align: center;
+  margin: 0 15px;
+}
+
+.sec-info__icons {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.sec-info__icon {
+  width: 40px;
+  height: 40px;
+  margin: 40px 32px 32px;
+}
+
+.sec-info__lists {
+  padding: 20px 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec-info__item {
+  display: flex;
+  align-items: flex-start;
+  height: 80px;
+}
+
+.sec-info__item p {
+  display: inline;
+  margin: 0 25px;
+  max-width: 300px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333;
+  text-align: start;
+}
+
+@media screen and (max-width: 500px) {
+  .sec-info__icon {
+    margin: 20px 10px 10px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .sec-info__lists {
+    padding: 20px 10%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sec-info__lists {
+    padding: 20px 10%;
+    flex-wrap: wrap;
+  }
+  .sec-info__icons {
+    margin: 20px auto;
+  }
+}

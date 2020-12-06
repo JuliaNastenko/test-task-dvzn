@@ -1,0 +1,163 @@
+.footer {
+  background: #081d31;
+  padding: 117px 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer__info::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #f2f6fa;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+
+.footer p,
+.footer div {
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.footer__copyrights p {
+  text-transform: capitalize;
+}
+
+.logo p:first-of-type {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 23px;
+}
+
+.footer__item {
+  margin-bottom: 7px;
+}
+
+.footer__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: $white;
+  transition: color 0.2s;
+}
+
+.footer__menu-child {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #081d31;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.1s linear;
+  box-shadow: 7px 7px 7px 7px rgba(0,0,0, 0.5);
+}
+
+.footer__item-child {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer__link-child {
+  color: $white;
+}
+
+.footer__menu-child:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.footer__link:hover + .footer__menu-child {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.footer__link:hover,
+.footer__link-child:hover {
+  color: $blue;
+}
+
+.icons {
+  display: flex;
+}
+
+.icon {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.footer__copyrights {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  display: flex;
+  position: relative;
+}
+
+.footer__copyright div {
+  margin-right: 36px;
+}
+
+.small-icon {
+  transition: transform 0.2s;
+}
+
+.small-icon:hover {
+  transform: scale(1.3);
+}
+
+@media screen and (max-width: 1500px) {
+  .footer {
+    padding: 117px 10%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    padding: 50px 5%;
+  }
+  .logo p,
+  .footer__block {
+    margin-right: 20px;
+  }
+  .logo p {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer__block,
+  .footer__copyright {
+    display: none;
+  }
+  .footer {
+    padding: 30px 5%;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+}
